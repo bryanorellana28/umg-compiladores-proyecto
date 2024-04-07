@@ -499,25 +499,37 @@ echo 'ENCENDER_MOTOR' | grun comandosDron comando -gui
 ```bash
 echo 'APAGAR_MOTOR' | grun comandosDron comando -gui
 ```
+![Ejemplo](APAGAR-MOTOR.png)
+
 
 ```bash
 echo 'GIRAR DERECHA 90' | grun comandosDron comando -gui
 ```
+![Ejemplo](GIRAR.png)
 
 
 ```bash
 echo 'ELEVARSE 10' | grun comandosDron comando -gui
 
 ```
+![Ejemplo](ELEVARSE-MOTOR.png)
+
 
 ```bash
 echo 'BAJAR 5' | grun comandosDron comando -gui
 ```
+![Ejemplo](BAJAR-MOTOR.png)
+
 
 ```bash
 echo 'ROTAR IZQUIERDA 30' | grun comandosDron comando -gui
 ```
+![Ejemplo](ROTAR-MOTOR.png)
+
 
 ```bash
 echo 'REGRESAR_BASE' | grun comandosDron comando -gui
  ```
+![Ejemplo](REGRESAR-MOTOR.png)
+
+
