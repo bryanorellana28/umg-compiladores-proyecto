@@ -493,6 +493,8 @@ echo 'ROTAR ADELANTE 30' | grun comandosDron comando -tree
 echo 'ENCENDER_MOTOR' | grun comandosDron comando -gui
 
 ```
+![Ejemplo](ENCENDER-MOTOR.png)
+
 
 ```bash
 echo 'APAGAR_MOTOR' | grun comandosDron comando -gui
