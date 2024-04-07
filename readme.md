@@ -512,24 +512,24 @@ echo 'GIRAR DERECHA 90' | grun comandosDron comando -gui
 echo 'ELEVARSE 10' | grun comandosDron comando -gui
 
 ```
-![Ejemplo](ELEVARSE-MOTOR.png)
+![Ejemplo](ELEVARSE.png)
 
 
 ```bash
 echo 'BAJAR 5' | grun comandosDron comando -gui
 ```
-![Ejemplo](BAJAR-MOTOR.png)
+![Ejemplo](BAJAR.png)
 
 
 ```bash
 echo 'ROTAR IZQUIERDA 30' | grun comandosDron comando -gui
 ```
-![Ejemplo](ROTAR-MOTOR.png)
+![Ejemplo](ROTAR.png)
 
 
 ```bash
 echo 'REGRESAR_BASE' | grun comandosDron comando -gui
  ```
-![Ejemplo](REGRESAR-MOTOR.png)
+![Ejemplo](REGRESAR.png)
 
 
