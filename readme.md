@@ -234,6 +234,39 @@ alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.13.1-complete.jar:$CLASSPA
 - Los pasos para instalarlo se
   [encuentran acá](https://github.com/antlr/antlr4/blob/master/doc/getting-started.md#windows)
 
+### Instalar ANTLR en Linux
+- Para instalar ANTLR se tienen que instalar los siguientes requerimientos desde PIP.
+```bash
+pip install antlr4-tools
+```
+- Con esto se instalaran los siguientes paquetes.
+```bash
+pip show antlr4-tools
+Name: antlr4-tools
+Version: 0.2.1
+Summary: Tools to run ANTLR4 tool and grammar interpreter/profiler
+Home-page: http://www.antlr.org
+Author: Terence Parr
+Author-email: parrt@antlr.org
+License: BSD
+Location: /home/borellana/.local/lib/python3.11/site-packages
+Requires: install-jdk
+Required-by: 
+pip show antlr4-tools
+Name: antlr4-tools
+Version: 0.2.1
+Summary: Tools to run ANTLR4 tool and grammar interpreter/profiler
+Home-page: http://www.antlr.org
+Author: Terence Parr
+Author-email: parrt@antlr.org
+License: BSD
+Location: /home/borellana/.local/lib/python3.11/site-packages
+Requires: install-jdk
+Required-by: 
+
+```
+
+
 ### Creacion de la Gramatica en ANTLR
 
 - Voy a crear el siguiente archivo `comandosDron.g4` con los comandos a
@@ -446,9 +479,43 @@ echo 'ROTAR ADELANTE 30' | grun comandosDron comando -tree
 ```bash
 ❯ echo 'GIRAR DERECHA 90' | grun comandosDron comando -tree
 (comando (accion GIRAR (direccion DERECHA)) (parametro 90) <EOF>)
-```
+```Gramatica
 
 ```bash
 ❯ echo 'ROTAR ADELANTE 30' | grun comandosDron comando -tree
 (comando (accion ROTAR (direccion ADELANTE)) (parametro 30) <EOF>)
 ```
+
+## Tarea 3
+- Vamos a realizar un arbol sintactico para cada una de las acciones del lenguaje creado, para esto vamos a usar las una flag de grun la cual validara graficamente el arbol con la entrada que ingresemos `-gui`
+
+```bash
+echo 'ENCENDER_MOTOR' | grun comandosDron comando -gui
+
+```
+
+```bash
+echo 'APAGAR_MOTOR' | grun comandosDron comando -gui
+```
+
+```bash
+echo 'GIRAR DERECHA 90' | grun comandosDron comando -gui
+```
+
+
+```bash
+echo 'ELEVARSE 10' | grun comandosDron comando -gui
+
+```
+
+```bash
+echo 'BAJAR 5' | grun comandosDron comando -gui
+```
+
+```bash
+echo 'ROTAR IZQUIERDA 30' | grun comandosDron comando -gui
+```
+
+```bash
+echo 'REGRESAR_BASE' | grun comandosDron comando -gui
+ ```
